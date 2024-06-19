@@ -1,0 +1,29 @@
+body{
+    background-color:rgb(230, 140, 89);
+    height: 100%;
+    width: 100%;
+    margin:0;
+    padding:0;
+}
+header{
+    background-color: rgba(245, 245, 220, 0.418);
+    width: 100%;
+    
+
+}
+header .cabecera{
+    height: 30%;
+    width: 100%;
+    font-size: 15px;
+    font-family: 'Times New Roman', Times, serif;
+    display: flex;
+    flex-direction: row;
+    align-items:center;
+    justify-content: space-between;
+    
+}
+parteSuperior{
+    background-color: rgb(178, 108, 243);
+    height: 100%;
+    width: 100%;
+}
