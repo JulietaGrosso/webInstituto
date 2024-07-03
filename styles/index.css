@@ -4,7 +4,15 @@
     font-weight: normal;
     font-style: normal;
 }
-
+@font-face {
+    font-family: 'BohemianSoul';
+    src: url('../fuentes/Bohemian\ Soul.otf');
+}
+.satisfy-regular {
+    font-family: "Satisfy", cursive;
+    font-weight: 400;
+    font-style: normal;
+  }
 
 
 body{
@@ -14,7 +22,8 @@ body{
    
 }
 header{
-    background-image: url(../images/descarga.png); 
+    background-image: url(../images/pinos.JPG);
+    background-size: cover; 
     width: 100%;
     height: 100vh;
     margin: 0%;
@@ -25,18 +34,22 @@ header{
     justify-content: space-between;
     
 }
-
+.onlynav{
+    height: 120px !important;
+}
 header .nav{
     width: 100%;
     height: 120px;
-    background-color: rgba(255, 255, 255, 0.101);
+    background-color: rgba(255, 255, 255, 0.048);
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
     border-bottom: 1px solid black;
 }
-
+header .rellenarNav{
+    background-color: beige !important;
+}
 
 header .nav .titulo{
     font-family:'atwritter';
@@ -47,7 +60,7 @@ header .nav .titulo{
 }
 header .nav .menu{
     font-size: 20px;
-    font-family: 'Times New Roman', Times, serif;
+    font-family: atwriter, serif;
     height: 100px;
     width: 50%; 
     margin: 40px;
@@ -71,7 +84,7 @@ header .imagenSuperior{
 }
 
 header .imagenSuperior h1{
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family:"Satisfy", cursive;
     font-size:30px;
 }
 
@@ -79,7 +92,7 @@ header .imagenSuperior h1{
 .espacioFrase{
     background-color:rgb(7, 34, 7);
     width: 100%;
-    height: 80vh;
+    height: 100vh;
     margin: 0;
     display: flex;
     flex-direction: column;
@@ -90,15 +103,27 @@ header .imagenSuperior h1{
     margin: 0%;
     color: beige;
     padding-top: 10px;
+    font-family: "BohemianSoul";
+  /*  animation:mover-izquierda-derecha 2s 2;
+    animation-fill-mode:forwards;*/
+}
+@keyframes mover-izquierda-derecha{
+    from{
+        transform:translateX(-100px)
+    }
+    to{
+        transform: translateX(10px);
+    }
 }
 
 
 .galeria{
     background-color: rgb(240, 206, 163);
     width: 100%;
-    height: 90vh;
+    height: 100vh;
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
    
 }
@@ -106,13 +131,14 @@ header .imagenSuperior h1{
 .galeria h2{
     color: blueviolet;
     margin: 0%;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: "BohemianSoul";
     font-size: 25px;
-    padding-top: 60px;
+    padding-bottom: 50px;
 }
+
 .galeria .carrete{
     background-color: rgb(240, 206, 163);
-    width:80%;
+    padding: 0 50px;
     height: 50vh;
     padding: 30px;
     display: flex;
@@ -123,12 +149,22 @@ header .imagenSuperior h1{
 
 }
 .galeria .carrete .imagenes{
+   
+    width: 300px;
+    height: 300px;
+    margin: 0 25px;
+    
+    
+}
+.galeria .carrete .imagenes img{
     background-color: rgb(195, 167, 237);
-    width: 350px;
-    height: 350px;
+    width: 100%;
+    height: 100%;
     margin: 0 25px;
     border: 1px solid black;
-    border-radius:5px
+    border-radius:5px;
+    object-fit: cover;
+
     
 }
 
@@ -142,7 +178,7 @@ header .imagenSuperior h1{
     padding: 30px;
 }
 .sobreMi .informacion{
-    background-color: brown;
+    background-color: rgb(174, 128, 184);
     width:80%;
     height: 80vh;
     display: flex;
@@ -166,8 +202,8 @@ header .imagenSuperior h1{
 }
 
 .sobreMi .informacion .infoDescripcion p{
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-size: 40px;
+    font-family: "Satisfy", cursive;
+    font-size: 30px;
 }
 .sobreMi .paraPorfolio{
     font-size: 20px;
@@ -175,6 +211,8 @@ header .imagenSuperior h1{
     text-align: start;
     align-items: flex-start;
     top: 40px;
+    width: 100%;
+    padding: 20px 0px;
    
 }
 .sobreMi .paraPorfolio ul{
@@ -205,11 +243,11 @@ footer .pieDePagina{
 }
 footer .pieDePagina .logosPiePag img{
     color: antiquewhite;
-    width: 20px;
-    height: 20px;
+    width: 120px;
+    height: 120px;
 }
 footer .pieDePagina .contacto p h3{
-    font-family:'Times New Roman', Times, serif;
+    font-family:'atwriter', sans-serif;
     color: antiquewhite;
     font-size: 10px;
 }
@@ -219,15 +257,42 @@ footer .pieDePagina .contacto i{
 }
 
 
-.seccionGaleria .galeria{
+.seccionGaleria{
     background-color: beige;
-    height: 100vh;
-
+    min-height: 100vh !important;
+    position: relative;
+    width: 100%;
+    
 }
-.seccion .galeria .carrete{
+.seccionGaleria .galeria2 {
+    background-color: rgb(158, 238, 189);
+    width: 100%;
+    min-height: 80%;
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
+    padding: 10px;
+}
+.seccionGaleria .galeria2 h2{
+    margin: 0%;
+    font-size: 30px;
+    font-family:"BohemianSoul", sans-serif;
+    color: blueviolet;
+    padding: 30px;
+
+}
+
+.seccionGaleria .galeria2 .imagenes{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     
+}
+.seccionGaleria .galeria2 .imagenes img{
+    width: 300px;
+    height: 300px;
+    padding: 8px;
+   
 }
