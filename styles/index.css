@@ -22,7 +22,7 @@ body{
    
 }
 header{
-    background-image: url(../images/pinos.JPG);
+    background-image: url(../images/reflejoenelcamino.jpg);
     background-size: cover; 
     width: 100%;
     height: 100vh;
@@ -39,7 +39,7 @@ header{
 }
 header .nav{
     width: 100%;
-    height: 120px;
+    min-height: 120px;
     background-color: rgba(255, 255, 255, 0.048);
     display: flex;
     flex-direction: row;
@@ -51,9 +51,9 @@ header .rellenarNav{
     background-color: beige !important;
 }
 
-header .nav .titulo{
-    font-family:'atwritter';
-    font-size: 25px;
+header .nav .titulo img{
+ 
+    height: 80px;
     margin: 30px;
     padding-left: 40px;
     
@@ -61,7 +61,7 @@ header .nav .titulo{
 header .nav .menu{
     font-size: 20px;
     font-family: atwriter, serif;
-    height: 100px;
+   
     width: 50%; 
     margin: 40px;
     display: flex;
@@ -85,7 +85,8 @@ header .imagenSuperior{
 
 header .imagenSuperior h1{
     font-family:"Satisfy", cursive;
-    font-size:30px;
+    font-size:50px;
+    color: black;
 }
 
 
@@ -103,7 +104,7 @@ header .imagenSuperior h1{
     margin: 0%;
     color: beige;
     padding-top: 10px;
-    font-family: "BohemianSoul";
+    font-family: "BohemianSoul", serif;
   /*  animation:mover-izquierda-derecha 2s 2;
     animation-fill-mode:forwards;*/
 }
@@ -207,7 +208,7 @@ header .imagenSuperior h1{
 }
 .sobreMi .paraPorfolio{
     font-size: 20px;
-    font-family:'Times New Roman', Times, serif;
+    font-family:"BohemianSoul", serif;
     text-align: start;
     align-items: flex-start;
     top: 40px;
@@ -217,7 +218,7 @@ header .imagenSuperior h1{
 }
 .sobreMi .paraPorfolio ul{
     font-size: 15px;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: "BohemianSoul", serif;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
